@@ -1,22 +1,22 @@
 Terminal Type
 -------
-####About
+#### About
 Terminal Type is a project born from my development of [deanhet.com](http://www.deanhet.com). It's a novel way for the user to interact with the site and get information by emulating a terminal/command line/chat interface. This plugin is designed to provide the framework and essentials to get started. It presumes you will deal with the styling/how it looks.
 
 All interaction happens within a textbox where the user can also input commands (and submit then with return). If a command is recognised then a canned response is given. If it isn't, a random error message is chosen.
 
 Likely to leave further development but I'll definitely consider addtional features if there's enough demand for them.
 
-####Demo
+#### Demo
 A tricked out super angularfied version of this plugin can be found at [deanhet.com](http://www.deanhet.com). This plugin is more recent (and better) than the code on the site so I would only use what's there as an example of the cool applications it can be used for.
 
-####Installation
+#### Installation
 Include jQuery then before closing your ```<body>``` tag, add:
 ````
 <script type="text/javascript" src="jquery.terminalType.js"></script>
 ````
 
-####Quick Example
+#### Quick Example
 You can quickly get Terminal Type up and running but it's only really useful with some configuration. Start by defining the textarea where all the magic happens:
 ```
 <textarea class="example-terminal"></textarea>
@@ -39,7 +39,7 @@ $(".example-terminal").terminalType({
     ]
 });
 ```
-####Callbacks
+#### Callbacks
 You can listen for and attach functions for when commands fail and succeed. To trigger a function for when a command is recognised:
 ```
 $(".example-terminal").terminalType().onTerminalSuccess(function(){
@@ -58,7 +58,7 @@ $(".example-terminal").terminalType().onTerminalSuccess(function(userInput){
     console.log("The user typed " + userInput);
 });
 ```
-####Settings
+#### Settings
 Option | Type | Default | Description
 ------ | ---- | ------- | -----------
 introText | string | "Hello, I'm some introduction test"| Text first displayed to the user when the plugin is initialised
